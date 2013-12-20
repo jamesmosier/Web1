@@ -25,24 +25,24 @@
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header navbar-scroll-to">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand pointer" data-toggle="tooltip" data-placement="right" data-title="Click here to go to top">
+            <a href="#course-info" class="navbar-brand pointer" data-toggle="tooltip" data-placement="right" data-title="Click here to go to top">
                 Web &amp; Devices 1
             </a>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">                
-                <li><a href="#">Course Info</a></li>
-                <li><a href="#">Class Resources</a></li>
-                <li><a href="#">Additional Resources</a></li>
-                <li><a href="#">Hosting Options</a></li>
-                <li><a href="#">Student Work/Blogs</a></li>
+            <ul class="nav navbar-nav navbar-scroll-to">                
+                <li><a href="#course-info">Course Info</a></li>
+                <li><a href="#class-resources">Class Resources</a></li>
+                <li><a href="#additional">Additional Resources</a></li>
+                <li><a href="#hosting">Hosting Options</a></li>
+                <li><a href="#student-work">Student Work/Blogs</a></li>
             </ul>
         </div>
     </div>
@@ -50,7 +50,7 @@
 
 <div class="container">
     
-    <div class="panel panel-basic">
+    <div class="panel panel-basic" id="course-info">
       <div class="panel-heading">
         <h3 class="panel-title">Course Info</h3>
       </div>
@@ -63,7 +63,7 @@
       </div>
     </div>
     
-    <div class="panel panel-basic">
+    <div class="panel panel-basic" id="class-resources">
       <div class="panel-heading">
         <h3 class="panel-title">Class Resources</h3>
       </div>
@@ -72,40 +72,62 @@
             <li><a href="">Syallabus</a></li>
             <li><a href="">Schedule</a></li>
             <li><a href="">Grading Policy</a></li>
-            <li><a href="">UA Withdrawal Policy</a></li>
+            <li><a href="http://www.uakron.edu/registrar/dates/springdropwd.dot">UA Withdrawal Policy</a></li>
         </ul>
       </div>
     </div>
     
-    <div class="panel panel-basic">
+    <div class="panel panel-basic" id="additional">
       <div class="panel-heading">
         <h3 class="panel-title">Additional Resources</h3>
       </div>
       <div class="panel-body">
-        <ul class="list-unstyled">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="list-unstyled">
+                <li><a href="http://markusvogl.com/web1/web_4rules.pdf" target="_blank">4 Rules for Web</a></li>
+                <li><a href="http://markusvogl.com/web1/interactive_box_model/css_box_demo.html" target="_blank">The Box Model</a></li>
+                <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+                <li><a href="http://w3schools.com/" target="_blank">w3 schools</a></li>
+                <li><a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
+
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="list-unstyled">                
+                <li><a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a></li>
+                <li><a href="http://www.fontsquirrel.com/" target="_blank">Font Squirrel</a></li>
+                <li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+                <li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></li>
+                <li><a href="http://brackets.io/" target="_blank">Adobe Brackets</a></li>
+                <li><a href="http://www.barebones.com/products/textwrangler/download.html" target="_blank">Text Wrangler</a></li>
+                <li><a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
       </div>
     </div>
     
-    <div class="panel panel-basic">
+    <div class="panel panel-basic" id="hosting">
       <div class="panel-heading">
         <h3 class="panel-title">Hosting Options</h3>
       </div>
       <div class="panel-body">
         <ul class="list-unstyled">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="http://awwwards.com" target="_blank">Awwwards</a></li>
+            <li><a href="http://www.webmonkey.com/" target="_blank">webmonkey</a></li>
+            <li><a href="http://www.lynda.com/" target="_blank">Lynda</a></li>
+            <li><a href="pluralsight.com" target="_blank">Pluralsight</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
         </ul>
       </div>
     </div>
     
-    <div class="panel panel-basic">
+    <div class="panel panel-basic" id="student-work" style="height: 580px;">
       <div class="panel-heading">
         <h3 class="panel-title">Student Work &amp; Blog Entries</h3>
       </div>
@@ -127,6 +149,21 @@
     <script type="text/javascript">
         $( document ).ready(function() {
             $("[data-toggle='tooltip']").tooltip();
+        });
+
+        $(".navbar-scroll-to a").click(function(event) {
+          event.preventDefault();
+          
+          var dest = 0;
+          if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+            dest = $(document).height() - $(window).height();
+          } else {
+            dest = $(this.hash).offset().top - 50;
+          }
+          
+          $('html,body').animate({
+            scrollTop: dest
+          }, 500, 'swing');
         });
     </script>
 </body>
