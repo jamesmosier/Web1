@@ -9,10 +9,11 @@
     
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" media="screen" />
 
-    
-    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>    
 <!--
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
@@ -22,7 +23,7 @@
     </script>
 -->
 </head>
-<body>
+<body onload="prettyPrint()">
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header navbar-scroll-to">
@@ -85,26 +86,78 @@
         <div class="row">
           <div class="col-sm-4">
             <ul class="list-unstyled">
-                <li><a href="http://markusvogl.com/web1/web_4rules.pdf" target="_blank">4 Rules for Web</a></li>
+                <h5>Help &amp; References</h5>
+                <li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
+                <li><a href="http://w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="http://support.uakron.edu/wiki/index.php/Zipspace" target="_blank">Zipspace Help</a></li>
+                <li><a href="http://validator.w3.org/" target="_blank">HTML Validator</a></li>
+                <li><a href="http://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+                
                 <li><a href="http://markusvogl.com/web1/interactive_box_model/css_box_demo.html" target="_blank">The Box Model</a></li>
-                <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
-                <li><a href="http://w3schools.com/" target="_blank">w3 schools</a></li>
                 <li><a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
-
+                <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+                <li><a href="http://www.lynda.com/" target="_blank">Lynda</a> (paid site)</li>
+                <li><a href="pluralsight.com" target="_blank">Pluralsight</a> (paid site)</li>
             </ul>
           </div>
           <div class="col-sm-4">
-            <ul class="list-unstyled">                
-                <li><a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a></li>
+            <ul class="list-unstyled">
+                
+                
+                
+                <h5>Design Resources/Inspiration</h5>
+                <li><a href="http://markusvogl.com/web1/web_4rules.pdf" target="_blank">4 Rules for Web &amp; IA</a></li>
+                <li><a href="resources/sitemap.pdf" target="_blank">Site Map Example</a></li>
+                <li><a href="resources/proposal.pdf" target="_blank">Project Proposal</a></li>
+                <li><a href="resources/student-proposal1.pdf" target="_blank">Student Project Proposal 1</a></li>
+                <li><a href="resources/student-proposal2.pdf" target="_blank">Student Project Proposal 2</a></li>
+                <li><a href="resources/wireframe-example.zip" target="_blank">Example Wireframe &amp; Final Design</a></li>
+                <li><a href="http://www.abookapart.com/products/responsive-web-design" target="_blank">Responsive Web Design Book</a></li>
+                <li><a href="resources/WDD_Buddycon_Icons.zip" target="_blank">Icons</a></li>
+                <li><a href="http://www.dexigner.com/" target="_blank">Dexigner</a></li>
+                <li><a href="http://coding.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/" target="_blank">Guidelines for Responsive Web Design (article)</a></li>
+                <li><a href="http://www.notcoming.com/" target="_blank">Responsive Design Example</a></li>
+                <li><a href="http://psd.tutsplus.com/tutorials/designing-tutorials/9-essential-principles-for-good-web-design/" target="_blank">Principles for Good Web Design</a></li>
+                <li><a href="http://mobile.smashingmagazine.com/2009/01/13/mobile-web-design-trends-2009/" target="_blank">Mobile Web Design Trends</a></li>
+                <li><a href="" target="_blank">Mobile Display Sizes</a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="http://awwwards.com" target="_blank">Awwwards</a></li>
                 <li><a href="http://www.fontsquirrel.com/" target="_blank">Font Squirrel</a></li>
                 <li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
-                <li><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></li>
-                <li><a href="http://brackets.io/" target="_blank">Adobe Brackets</a></li>
-                <li><a href="http://www.barebones.com/products/textwrangler/download.html" target="_blank">Text Wrangler</a></li>
                 <li><a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler</a></li>
+                <li><a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a></li>
+                <li><a href="http://www.webmonkey.com/" target="_blank">webmonkey</a></li>
             </ul>
           </div>
-          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <ul class="list-unstyled">
+              <h5>History</h5>
+              <li><a href="http://www.w3.org/History.html" target="_blank">History of WWW on W3</a></li>
+              <li><a href="http://www.youtube.com/watch?v=9hIQjrMHTv4" target="_blank">History of the Internet</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/History_of_the_Internet" target="_blank">History of the Internet on Wikipedia</a></li>
+              <li><a href="http://www.youtube.com/watch?v=fxfhInhkvtM&feature=related" target="_blank">1993</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/Web_1.0" target="_blank">Web 1.0</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/Web_2.0" target="_blank">Web 2.0</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/Semantic_Web" target="_blank">Semantic Web (Web 3.0?)</a></li>
+                
+                
+              <h5>Text Editors</h5>
+              <li><a href="http://ash.barebones.com/TextWrangler_4.5.5.dmg" target="_blank">Text Wrangler (download)</a></li>
+              <li><a href="http://download.tuxfamily.org/notepadplus/6.5.3/npp.6.5.3.Installer.exe" target="_blank">Notepad++ (download)</a></li>
+              <li><a href="http://download.brackets.io/file.cfm?platform=OSX&build=35" target="_blank">Adobe Brackets (download)</a></li>
+              <h5>jQuery Plugins</h5>
+              <li><a href="http://wedesignpixel.com/useful-effective-jquery-lightbox-plugins/" target="_blank">Lightbox Plugins</a></li>
+              <li><a href="http://wedesignpixel.com/free-responsive-jquery-carousel-slider-plugins/" target="_blank">Carousel Plugins</a></li>
+              <li><a href="http://www.lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a></li>
+              <li><a href="http://www.captcha.net/" target="_blank">Captcha</a></li>
+              <li><a href="javascript:void(0);" data-toggle="modal" data-target="#cloakModal">Email Cloak</a></li>
+              <li><a href="" target="_blank"></a></li>
+              <li><a href="" target="_blank"></a></li>
+              <li><a href="" target="_blank"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -114,15 +167,12 @@
         <h3 class="panel-title">Hosting Options</h3>
       </div>
       <div class="panel-body">
-        <ul class="list-unstyled">
-            <li><a href="http://awwwards.com" target="_blank">Awwwards</a></li>
-            <li><a href="http://www.webmonkey.com/" target="_blank">webmonkey</a></li>
-            <li><a href="http://www.lynda.com/" target="_blank">Lynda</a></li>
-            <li><a href="pluralsight.com" target="_blank">Pluralsight</a></li>
-            <li><a href="" target="_blank"></a></li>
-            <li><a href="" target="_blank"></a></li>
-            <li><a href="" target="_blank"></a></li>
-            <li><a href="" target="_blank"></a></li>
+        <ul class="list-unstyled">            
+            <li><a href="http://www.ipage.com/" target="_blank">iPage</a></li>
+            <li><a href="http://www.a2hosting.com/" target="_blank">A2 Hosting</a></li>
+            <li><a href="http://www.dreamhost.com/web-hosting/" target="_blank">Dreamhost</a></li>
+            <li><a href="http://www.ixwebhosting.com/hosting-plans" target="_blank">IX Web Hosting</a></li>
+            <li><a href="http://www.hostmonster.com/" target="_blank">Host Monster</a></li>            
         </ul>
       </div>
     </div>
@@ -142,6 +192,37 @@
     </div>
     
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="cloakModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="color: #494949;">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 26px;">&times;</button>
+        <h3>Anti-Harvest Script</h3>
+        <h5>Place this Javascript in your HEAD tag</h5>
+<pre class="prettyprint">
+&lt;script type="text/javascript"&gt;
+
+  var name = 'jdm113'; 
+  var server = 'zips.uakron';
+  var suffix = '.edu'; 
+  function noHarvest() 
+  { 
+    document.write('&lt;a href="' + 'mailto:' + name + '@' + server + suffix + '"&gt;' + 'jdm113 |at| zips.uakron |DOT| edu' +'&lt;/a&gt;'); 
+  }
+
+&lt;/script&gt;
+  </pre>
+  <h5>place in BODY where you want the email link:</h5>
+<pre class="prettyprint">
+&lt;script&gt; noHarvest() &lt;/script&gt;
+</pre>
+      </div>      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--<script type="text/javascript" src="/js/ga.js"></script>-->
