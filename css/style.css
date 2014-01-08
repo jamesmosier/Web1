@@ -87,7 +87,36 @@ a:hover, a:focus {
     font-size: 18px;
 }
 
+.panel-fixed-height {
+    height: 210px;
+}
 
+.theLineBottom {
+    background-color: #313844;
+    margin-top: 50px;
+    width: 100%;
+    height: 1px;
+}
+
+.social-list {
+    font-size: 28px;
+    float: right;
+    padding-top: 10px;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;   
+}
+
+.copyright-phone {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* SYNTAX HIGHLIGHTING*/
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint { display: block; background-color: #333 }
 pre .nocode { background-color: none; color: #000 }

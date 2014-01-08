@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettify.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" media="screen" />
 
@@ -57,26 +58,50 @@
       </div>
       <div class="panel-body">
           <ul class="list-unstyled">
-              <li>James Mosier - <a href="mailto: jdm113@zips.uakron.edu">jdm113@zips.uakron.edu</a></li>
+              <li>James Mosier &minus; (330)-819-3660 &minus;<a href="mailto: jdm113@zips.uakron.edu"> jdm113@zips.uakron.edu</a></li>
               <li>T/Th 5:10 - 7:50 - Room 124</li>
               <li>7100 281-002 (17889)</li>
           </ul>
       </div>
     </div>
     
-    <div class="panel panel-basic" id="class-resources">
-      <div class="panel-heading">
-        <h3 class="panel-title">Class Resources</h3>
+
+    <div class="row two-panel-wrap">
+      <div class="col-sm-6">
+        <div class="panel panel-basic panel-fixed-height" id="class-resources">
+          <div class="panel-heading">
+            <h3 class="panel-title">Class Resources</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+                <li><a href="">Syallabus</a></li>
+                <li><a href="">Schedule</a></li>
+                <li><a href="">Grading Policy</a></li>
+                <li><a href="http://www.uakron.edu/registrar/dates/springdropwd.dot">UA Withdrawal Policy</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-        <ul class="list-unstyled">
-            <li><a href="">Syallabus</a></li>
-            <li><a href="">Schedule</a></li>
-            <li><a href="">Grading Policy</a></li>
-            <li><a href="http://www.uakron.edu/registrar/dates/springdropwd.dot">UA Withdrawal Policy</a></li>
-        </ul>
+
+      <div class="col-sm-6">
+        <div class="panel panel-basic panel-fixed-height" id="class-examples">
+          <div class="panel-heading">
+            <h3 class="panel-title">Class Examples</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">                
+                <li><a href="resources/sitemap.pdf" target="_blank">Site Map Example</a></li>
+                <li><a href="resources/proposal.pdf" target="_blank">Project Proposal</a></li>
+                <li><a href="resources/student-proposal1.pdf" target="_blank">Student Project Proposal 1</a></li>
+                <li><a href="resources/student-proposal2.pdf" target="_blank">Student Project Proposal 2</a></li>
+                <li><a href="resources/wireframe-example.zip" target="_blank">Example Wireframe &amp; Final Design</a></li>
+                <li><a href="http://support.uakron.edu/wiki/index.php/Zipspace" target="_blank">Zipspace Help</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+
     
     <div class="panel panel-basic" id="additional">
       <div class="panel-heading">
@@ -86,49 +111,67 @@
         <div class="row">
           <div class="col-sm-4">
             <ul class="list-unstyled">
-                <h5>Help &amp; References</h5>
-                <li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
-                <li><a href="http://w3schools.com/" target="_blank">W3 Schools</a></li>
-                <li><a href="http://support.uakron.edu/wiki/index.php/Zipspace" target="_blank">Zipspace Help</a></li>
-                <li><a href="http://validator.w3.org/" target="_blank">HTML Validator</a></li>
-                <li><a href="http://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
-                <li><a href="" target="_blank"></a></li>
-                <li><a href="" target="_blank"></a></li>
-                
-                <li><a href="http://markusvogl.com/web1/interactive_box_model/css_box_demo.html" target="_blank">The Box Model</a></li>
-                <li><a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
-                <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
-                <li><a href="http://www.lynda.com/" target="_blank">Lynda</a> (paid site)</li>
-                <li><a href="pluralsight.com" target="_blank">Pluralsight</a> (paid site)</li>
+
+              <h5>Help &amp; References</h5>
+              <li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
+              <li><a href="http://w3schools.com/" target="_blank">W3 Schools</a></li>
+              <li><a href="http://markusvogl.com/web1/web_4rules.pdf" target="_blank">4 Rules for Web &amp; IA</a></li>
+              <li><a href="http://markusvogl.com/web1/interactive_box_model/css_box_demo.html" target="_blank">Interactive Box Model</a></li>
+              <li><a href="http://www.w3.org/TR/CSS2/box.html" target="_blank">Box Model (w3)</a></li> 
+              <li><a href="http://validator.w3.org/" target="_blank">HTML Validator</a></li>
+              <li><a href="http://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>                            
+              <li><a href="http://www.youtube.com/watch?v=2j2x2miPPDQ" target="_blank">Website Accessibility (video)</a></li>
+              <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Color Blindness Simulator</a></li> 
+              <li><a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
+              <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+              <li><a href="http://www.lynda.com/" target="_blank">Lynda (paid site)</a></li>
+              <li><a href="pluralsight.com" target="_blank">Pluralsight (paid site)</a></li>
+
+                              
+              <h5>Design Resources/Inspiration</h5>
+              
+              <li><a href="http://awwwards.com" target="_blank">Awwwards</a></li>
+              <li><a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler</a></li>
+              <li><a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a></li>        
+              <li><a href="http://subtlepatterns.com/" target="_blank">Subtle Patterns</a></li>        
+              <li><a href="http://www.dexigner.com/" target="_blank">Dexigner</a></li>
+              <li><a href="http://www.webmonkey.com/" target="_blank">webmonkey</a></li>
+              <li><a href="http://cssdeck.com/" target="_blank">CSS Deck</a></li>
+              <li><a href="http://codepen.io/" target="_blank">Codepen</a></li>
+              <li><a href="" target="_blank"></a></li>
+              <li><a href="http://psd.tutsplus.com/tutorials/designing-tutorials/9-essential-principles-for-good-web-design/" target="_blank">Principles for Good Web Design</a></li>
+              <li><a href="resources/WDD_Buddycon_Icons.zip" target="_blank">Social Icons (download)</a></li>
+
             </ul>
           </div>
           <div class="col-sm-4">
             <ul class="list-unstyled">
-                
-                
-                
-                <h5>Design Resources/Inspiration</h5>
-                <li><a href="http://markusvogl.com/web1/web_4rules.pdf" target="_blank">4 Rules for Web &amp; IA</a></li>
-                <li><a href="resources/sitemap.pdf" target="_blank">Site Map Example</a></li>
-                <li><a href="resources/proposal.pdf" target="_blank">Project Proposal</a></li>
-                <li><a href="resources/student-proposal1.pdf" target="_blank">Student Project Proposal 1</a></li>
-                <li><a href="resources/student-proposal2.pdf" target="_blank">Student Project Proposal 2</a></li>
-                <li><a href="resources/wireframe-example.zip" target="_blank">Example Wireframe &amp; Final Design</a></li>
-                <li><a href="http://www.abookapart.com/products/responsive-web-design" target="_blank">Responsive Web Design Book</a></li>
-                <li><a href="resources/WDD_Buddycon_Icons.zip" target="_blank">Icons</a></li>
-                <li><a href="http://www.dexigner.com/" target="_blank">Dexigner</a></li>
-                <li><a href="http://coding.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/" target="_blank">Guidelines for Responsive Web Design (article)</a></li>
-                <li><a href="http://www.notcoming.com/" target="_blank">Responsive Design Example</a></li>
-                <li><a href="http://psd.tutsplus.com/tutorials/designing-tutorials/9-essential-principles-for-good-web-design/" target="_blank">Principles for Good Web Design</a></li>
-                <li><a href="http://mobile.smashingmagazine.com/2009/01/13/mobile-web-design-trends-2009/" target="_blank">Mobile Web Design Trends</a></li>
-                <li><a href="" target="_blank">Mobile Display Sizes</a></li>
-                <li><a href="" target="_blank"></a></li>
-                <li><a href="http://awwwards.com" target="_blank">Awwwards</a></li>
+
+                <h5>Typography</h5>
                 <li><a href="http://www.fontsquirrel.com/" target="_blank">Font Squirrel</a></li>
                 <li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
-                <li><a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler</a></li>
-                <li><a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a></li>
-                <li><a href="http://www.webmonkey.com/" target="_blank">webmonkey</a></li>
+                <li><a href="http://pxtoem.com/" target="_blank">PX to EM Conversion</a></li> 
+                <li><a href="http://www.smashingmagazine.com/2009/08/20/typographic-design-survey-best-practices-from-the-best-blogs/" target="_blank">Typographic Design Patterns &amp; Best Practices</a></li> 
+                <li><a href="http://alistapart.com/article/howtosizetextincss" target="_blank">How to Size Text in CSS</a></li> 
+                <li><a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp" target="_blank">@font-face rule</a></li> 
+
+
+                <h5>Mobile/Responsive Design</h5>
+                <li><a href="http://coding.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/" target="_blank">Guidelines for Responsive Web Design (article)</a></li>
+                <li><a href="http://www.notcoming.com/" target="_blank">Responsive Design Example</a></li>
+                <li><a href="http://www.abookapart.com/products/responsive-web-design" target="_blank">Responsive Web Design Book</a></li>
+                <li><a href="http://mobile.smashingmagazine.com/2009/01/13/mobile-web-design-trends-2009/" target="_blank">Mobile Web Design Trends</a></li>
+                <li><a href="" target="_blank">Mobile Display Sizes</a></li>   
+                <li><a href="http://ipadpeek.com/" target="_blank">iPad/iPhone Screen Emulator</a></li>   
+                <li><a href="" target="_blank"></a></li>          
+                
+                <h5>Information Architecture/User Experience Design</h5>
+                <li><a href="http://wireframes.tumblr.com/" target="_blank">I <3 Wireframes</a></li>
+                <li><a href="http://www.smashingmagazine.com/2009/09/01/35-excellent-wireframing-resources/" target="_blank">Wireframing Resources</a></li>
+                <li><a href="http://www.uxbooth.com/" target="_blank">UX Booth (blog)</a></li>
+                <li><a href="http://uxmag.com/" target="_blank">UX Mag</a></li>
+                <li><a href="http://designmodo.com/wireframing-prototyping-mockuping/" target="_blank">Wireframes vs Prototypes vs Mockups</a></li>
+                
             </ul>
           </div>
           <div class="col-sm-4">
@@ -147,7 +190,7 @@
               <li><a href="http://ash.barebones.com/TextWrangler_4.5.5.dmg" target="_blank">Text Wrangler (download)</a></li>
               <li><a href="http://download.tuxfamily.org/notepadplus/6.5.3/npp.6.5.3.Installer.exe" target="_blank">Notepad++ (download)</a></li>
               <li><a href="http://download.brackets.io/file.cfm?platform=OSX&build=35" target="_blank">Adobe Brackets (download)</a></li>
-              <h5>jQuery Plugins</h5>
+              <h5>JavaScript/jQuery Resources</h5>
               <li><a href="http://wedesignpixel.com/useful-effective-jquery-lightbox-plugins/" target="_blank">Lightbox Plugins</a></li>
               <li><a href="http://wedesignpixel.com/free-responsive-jquery-carousel-slider-plugins/" target="_blank">Carousel Plugins</a></li>
               <li><a href="http://www.lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a></li>
@@ -177,21 +220,49 @@
       </div>
     </div>
     
-    <div class="panel panel-basic" id="student-work" style="height: 580px;">
+    <div class="panel panel-basic" id="student-work">
       <div class="panel-heading">
-        <h3 class="panel-title">Student Work &amp; Blog Entries</h3>
+        <h3 class="panel-title">Student Work &amp; Blogs</h3>
       </div>
       <div class="panel-body">
         <ul class="list-unstyled">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
         </ul>
       </div>
     </div>
     
 </div>
+
+<footer class="container">
+  <div class="theLineBottom pull-left">&nbsp;</div>
+  <div class="row">     
+    <div class="col-lg-12">
+      <ul class="list-inline social-list pull-right">
+        <li><a href="https://github.com/jamez14" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>            
+        <li><a href="https://twitter.com/jamez14" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>  
+        <li><a href="http://lnkd.in/3meEdA" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> 
+        <li><a href="mailto:jdm113@zips.uakron.edu" target="_top" title="Email Me"><i class="fa fa-envelope"></i></a></li>
+        <li><span class="copyright">&copy; James D. Mosier 2014</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="copyright copyright-phone visible-xs">&copy; James D. Mosier 2014</div> -->
+
+</footer>
+
 
 
 <!-- Modal -->
@@ -224,28 +295,36 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!--<script type="text/javascript" src="/js/ga.js"></script>-->
-    
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $("[data-toggle='tooltip']").tooltip();
-        });
 
-        $(".navbar-scroll-to a").click(function(event) {
-          event.preventDefault();
-          
-          var dest = 0;
-          if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-            dest = $(document).height() - $(window).height();
-          } else {
-            dest = $(this.hash).offset().top - 50;
-          }
-          
-          $('html,body').animate({
-            scrollTop: dest
-          }, 500, 'swing');
-        });
-    </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+      $( document ).ready(function() {
+          $("[data-toggle='tooltip']").tooltip();
+      });
+
+      $(".navbar-scroll-to a").click(function(event) {
+        event.preventDefault();
+        
+        var dest = 0;
+        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+          dest = $(document).height() - $(window).height();
+        } else {
+          dest = $(this.hash).offset().top - 50;
+        }
+        
+        $('html,body').animate({
+          scrollTop: dest
+        }, 500, 'swing');
+      });
+  </script>
+
+  <!--Google Analytics-->
+  <script>
+      var _gaq=[['_setAccount','UA-39374841-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>
