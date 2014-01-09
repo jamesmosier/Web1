@@ -141,19 +141,19 @@
               <li><a href="" target="_blank"></a></li>
               <li><a href="http://psd.tutsplus.com/tutorials/designing-tutorials/9-essential-principles-for-good-web-design/" target="_blank">Principles for Good Web Design</a></li>
               <li><a href="resources/WDD_Buddycon_Icons.zip" target="_blank">Social Icons (download)</a></li>
-
+              <li><a href="http://search.creativecommons.org/" target="_blank">Creative Commons Imagery Search</a></li>
             </ul>
           </div>
           <div class="col-sm-4">
             <ul class="list-unstyled">
 
-                <h5>Typography</h5>
-                <li><a href="http://www.fontsquirrel.com/" target="_blank">Font Squirrel</a></li>
+                <h5>Typography</h5>                
                 <li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+                <li><a href="http://fontsquirrel.com/" target="_blank">Font Squirrel</a></li>
                 <li><a href="http://pxtoem.com/" target="_blank">PX to EM Conversion</a></li> 
                 <li><a href="http://www.smashingmagazine.com/2009/08/20/typographic-design-survey-best-practices-from-the-best-blogs/" target="_blank">Typographic Design Patterns &amp; Best Practices</a></li> 
                 <li><a href="http://alistapart.com/article/howtosizetextincss" target="_blank">How to Size Text in CSS</a></li> 
-                <li><a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp" target="_blank">@font-face rule</a></li> 
+                
 
 
                 <h5>Mobile/Responsive Design</h5>
@@ -193,7 +193,7 @@
               <h5>JavaScript/jQuery Resources</h5>
               <li><a href="http://wedesignpixel.com/useful-effective-jquery-lightbox-plugins/" target="_blank">Lightbox Plugins</a></li>
               <li><a href="http://wedesignpixel.com/free-responsive-jquery-carousel-slider-plugins/" target="_blank">Carousel Plugins</a></li>
-              <li><a href="http://www.lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a></li>
+              <li><a href="http://fancybox.net/" target="_blank">Fancybox</a></li>
               <li><a href="http://www.captcha.net/" target="_blank">Captcha</a></li>
               <li><a href="javascript:void(0);" data-toggle="modal" data-target="#cloakModal">Email Cloak</a></li>
               <li><a href="" target="_blank"></a></li>
@@ -297,28 +297,8 @@
 </div>
 
 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  
-  <script type="text/javascript">
-      $( document ).ready(function() {
-          $("[data-toggle='tooltip']").tooltip();
-      });
-
-      $(".navbar-scroll-to a").click(function(event) {
-        event.preventDefault();
-        
-        var dest = 0;
-        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-          dest = $(document).height() - $(window).height();
-        } else {
-          dest = $(this.hash).offset().top - 50;
-        }
-        
-        $('html,body').animate({
-          scrollTop: dest
-        }, 500, 'swing');
-      });
-  </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="js/scripts.js"></script>        
 
   <!--Google Analytics-->
   <script>
@@ -326,6 +306,13 @@
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src='//www.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
+      
+      _gaq.push(['_setCustomVar',
+      1,                   // This custom var is set to slot #1.  Required parameter.
+      'Section',           // The top-level name for your online content categories.  Required parameter.
+      'Web 1'  // Sets the value of "Section" to "Life & Style" for this particular aricle.  Required parameter.
+      //3                 Sets the scope to page-level.  Optional parameter.
+      ]);
   </script>
 </body>
 </html>
