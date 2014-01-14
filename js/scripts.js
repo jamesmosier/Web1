@@ -16,3 +16,7 @@ $(".navbar-scroll-to a").click(function(event) {
       scrollTop: dest
     }, 500, 'swing');
 });
+
+$('body').on('click', 'a.disabled', function(event) {
+    event.preventDefault();
+});
