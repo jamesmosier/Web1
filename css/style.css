@@ -56,9 +56,9 @@ a.disabled, a.disabled:hover, a.disabled:focus {
 }
 
 .navbar-default {
-    background-color: #F5F5F5;
+    background-color: #E6E6E6;
     border-color: #ADADAD;
-    opacity: 0.8;
+		opacity: 0.9;
 }
 
 .navbar-default .navbar-brand {
@@ -114,7 +114,7 @@ a.disabled, a.disabled:hover, a.disabled:focus {
 .copyright {
     color: #fff;
     font-size: 14px;
-    font-weight: 300;   
+    font-weight: 300;
 }
 
 .copyright-phone {
@@ -126,6 +126,24 @@ a.disabled, a.disabled:hover, a.disabled:focus {
     padding-top: 25px;
 }
 
+.project1-alert {
+	font-weight: 300;
+}
+
+.red {
+	color: #F00;
+	font-weight: bold;
+}
+
+.popover-trigger {
+	color: #F00;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.popover {
+	color: #000;
+}
 
 /* SYNTAX HIGHLIGHTING*/
 /* desert scheme ported from vim to google prettify */
